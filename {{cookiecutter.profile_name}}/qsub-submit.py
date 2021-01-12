@@ -95,7 +95,7 @@ jobinfo_cmd = (
 # set up resources part of command
 # start by requesting threads in smp if threads > 1
 if threads > 1:
-    resources_cmd = "-pe smp {threads}"
+    resources_cmd = "-pe {parallel_queue} {threads}"
 else:
     resources_cmd = ""
 # add memory limit/request to resources
