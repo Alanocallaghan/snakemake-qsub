@@ -144,4 +144,4 @@ shell_stdout = shell(
 )
 
 # obtain job id from this, and print
-print(shell_stdout.decode().strip())
+print(shell_stdout)
